@@ -1,0 +1,9 @@
+{
+	"this.$emit()": {
+		"prefix": ["this.$emit()", "emit"],
+		"body": [
+			"this.\\$emit('${1:event-name}'${2:, ${3:param}});$0"
+		],
+		"description": "Trigger an event on the current instance. Any additional arguments will be passed into the listener’s callback function.\n `vm.$emit(eventName, […args])`"
+	}
+}

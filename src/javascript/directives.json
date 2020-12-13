@@ -1,0 +1,127 @@
+{
+	"Import Directive": {
+		"prefix": ["importDirective", "ivd"],
+		"body": [
+			"import $1 from '@/directives/${1:Feature}';$0"
+		]
+	},
+	"Vue Global Directive (All Hooks)": {
+		"prefix": ["Vue.directive()", "vgd"],
+		"body": [
+			"Vue.directive('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', {",
+			"  ${2:created(el, binding, vnode) {$3\\},}",
+			"  ${4:beforeMount(el, binding, vnode, prevVNode) {$5\\},}",
+			"  ${6:mounted(el, binding, vnode, prevVNode) {$7\\},}",
+			"  ${8:beforeUpdate(el, binding, vnode, prevVNode) {$9\\},}",
+			"  ${10:updated(el, binding, vnode, prevVNode) {$11\\},}",
+			"  ${12:beforeUnmount(el, binding, vnode, prevVNode) {$13\\},}",
+			"  ${14:unmounted(el, binding, vnode, prevVNode) {$15\\},}",
+			"});$0"
+		],
+		"description": "Register a global directive (all lifecycle hooks)"
+	},
+	"Vue Global Directive (bind, update)": {
+		"prefix": ["Vue.directive()", "vgd"],
+		"body": [
+			"Vue.directive('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', function (el, binding, vnode) {",
+			"  ${2:// `bind`, `update`}",
+			"  $0",
+			"});"
+		],
+		"description": "Register a global directive (bind, update)"
+	},
+	"Retrieve Global Directive": {
+		"prefix": "Vue.directive()",
+		"body": [
+			"const ${2:feature}Directive = Vue.directive('${1:id}');"
+		],
+		"description": "getter, return the directive definition if registered"
+	},
+	"Vue Single File Directive (All Hooks)": {
+		"prefix": ["vueDirective", "vsd"],
+		"body": [
+			"export default {",
+			"  name: '${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}',",
+			"  ${2:created(el, binding, vnode) {$3\\},}",
+			"  ${4:beforeMount(el, binding, vnode, prevVNode) {$5\\},}",
+			"  ${6:mounted(el, binding, vnode, prevVNode) {$7\\},}",
+			"  ${8:beforeUpdate(el, binding, vnode, prevVNode) {$9\\},}",
+			"  ${10:updated(el, binding, vnode, prevVNode) {$11\\},}",
+			"  ${12:beforeUnmount(el, binding, vnode, prevVNode) {$13\\},}",
+			"  ${14:unmounted(el, binding, vnode, prevVNode) {$15\\},}",
+			"});$0"
+		],
+		"description": "Register a single file directive (all lifecycle hooks)"
+	},
+	"Vue Local Directives": {
+		"prefix": ["option.directives", "vld"],
+		"body": ["directives: {", "  ${1:id}: {$2},$0", "},"],
+		"description": "Define local directives in a component’s options.\nA hash of directives to be made available to the Vue instance."
+	},
+	"Directive created hook": {
+		"prefix": ["directive.created", "vd.created"],
+		"body": [
+			"created (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		],
+		"description": "Directive `bind` lifecycle"
+	},
+	"Directive beforeMount hook": {
+		"prefix": ["directive.beforeMount", "vd.beforeMount"],
+		"body": [
+			"beforeMount (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		],
+		"description": "Directive `inserted` lifecycle"
+	},
+	"Directive mounted hook": {
+		"prefix": ["directive.mounted", "vd.mounted"],
+		"body": [
+			"mounted (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		],
+		"description": "Directive `update` lifecycle"
+	},
+	"Directive beforeUpdate hook": {
+		"prefix": ["directive.beforeUpdate", "vd.beforeUpdate"],
+		"body": [
+			"beforeUpdate (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		],
+		"description": "Directive `componentUpdated` lifecycle"
+	},
+	"Directive updated hook": {
+		"prefix": ["directive.updated", "vd.updated"],
+		"body": [
+			"updated (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		],
+		"description": "Directive `unbind` lifecycle"
+	},
+	"Directive beforeUnmount hook": {
+		"prefix": [
+			"directive.beforeUnmount",
+			"vd.beforeUnmount"
+		],
+		"body": [
+			"beforeUnmount (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		],
+		"description": "Directive `unbind` lifecycle"
+	},
+	"Directive unmounted hook": {
+		"prefix": ["directive.unmounted", "vd.unmounted"],
+		"body": [
+			"unmounted (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		],
+		"description": "Directive `unbind` lifecycle"
+	}
+}

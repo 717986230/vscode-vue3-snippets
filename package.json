@@ -1,0 +1,105 @@
+{
+	"name": "vscode-vue3-snippets",
+	"publisher": "NicholasHsiang",
+	"displayName": "Vue 3 Snippets",
+	"description": "Code snippets for Vue 3",
+	"icon": "art/icon.png",
+	"version": "0.0.1",
+	"galleryBanner": {
+		"color": "#ffffff",
+		"theme": "dark"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/xianghongai/vscode-vue3-snippets/issues"
+	},
+	"homepage": "https://github.com/xianghongai/vscode-vue3-snippets/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/xianghongai/vscode-vue3-snippets/blob/master/README.md"
+	},
+	"engines": {
+		"vscode": "^0.12.x"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"Snippet",
+		"Vue",
+		"Vue Router",
+		"Vuex",
+		"Vue 3",
+		"Vue3",
+		"Vue 3 Snippets",
+		"Vue3 Snippets",
+		"Vue 3 Code Snippets",
+		"Vue3 Code Snippets"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "vue",
+				"aliases": [
+					"Vue",
+					"vue"
+				],
+				"extensions": [
+					".vue"
+				]
+			}
+		],
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/vue.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/vue.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "scss",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "less",
+				"path": "./snippets/css.json"
+			}
+		]
+	},
+	"scripts": {
+		"build": "node merge.js && vsce package"
+	},
+	"devDependencies": {
+		"glob": "^7.1.4"
+	}
+}
