@@ -1,0 +1,11 @@
+{
+	"teleport": {
+		"prefix": "teleport",
+		"body": [
+			"<teleport to=\"${1:selector}\">",
+			"  $2",
+			"</teleport>"
+		],
+		"description": "`<slot>` serve as content distribution outlets in component templates. `<slot>` itself will be replaced."
+	}
+}

@@ -5,10 +5,11 @@
 			"import $1 from '@/directives/${1:Feature}';$0"
 		]
 	},
+
 	"Vue Global Directive (All Hooks)": {
-		"prefix": ["Vue.directive()", "vgd"],
+		"prefix": ["app.directive()", "vgd"],
 		"body": [
-			"Vue.directive('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', {",
+			"${16:app}.directive('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', {",
 			"  ${2:created(el, binding, vnode) {$3\\},}",
 			"  ${4:beforeMount(el, binding, vnode, prevVNode) {$5\\},}",
 			"  ${6:mounted(el, binding, vnode, prevVNode) {$7\\},}",
@@ -21,22 +22,23 @@
 		"description": "Register a global directive (all lifecycle hooks)"
 	},
 	"Vue Global Directive (bind, update)": {
-		"prefix": ["Vue.directive()", "vgd"],
+		"prefix": ["app.directive()", "vgd"],
 		"body": [
-			"Vue.directive('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', function (el, binding, vnode) {",
-			"  ${2:// `bind`, `update`}",
+			"${6:app}.directive('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}', function (el, binding, vnode, prevVNode) {",
+			"  ${2:// `mounted`, `updated`}",
 			"  $0",
 			"});"
 		],
 		"description": "Register a global directive (bind, update)"
 	},
 	"Retrieve Global Directive": {
-		"prefix": "Vue.directive()",
+		"prefix": "app.directive()",
 		"body": [
-			"const ${2:feature}Directive = Vue.directive('${1:id}');"
+			"const ${2:feature}Directive = ${6:app}.directive('${1:id}');"
 		],
 		"description": "getter, return the directive definition if registered"
 	},
+
 	"Vue Single File Directive (All Hooks)": {
 		"prefix": ["vueDirective", "vsd"],
 		"body": [
@@ -53,11 +55,13 @@
 		],
 		"description": "Register a single file directive (all lifecycle hooks)"
 	},
+
 	"Vue Local Directives": {
 		"prefix": ["option.directives", "vld"],
 		"body": ["directives: {", "  ${1:id}: {$2},$0", "},"],
 		"description": "Define local directives in a component’s options.\nA hash of directives to be made available to the Vue instance."
 	},
+
 	"Directive created hook": {
 		"prefix": ["directive.created", "vd.created"],
 		"body": [

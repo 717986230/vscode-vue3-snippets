@@ -1,0 +1,19 @@
+{
+	"Import Global API": {
+		"prefix": "importGlobalApi",
+		"body": [
+			"import {",
+			"  createApp,",
+			"  h,",
+			"  defineComponent,",
+			"  defineAsyncComponent,",
+			"  resolveComponent,",
+			"  resolveDynamicComponent,",
+			"  resolveDirective,",
+			"  withDirectives,",
+			"  createRenderer,",
+			"  nextTick,",
+			"} from 'vue';"
+		]
+	}
+}

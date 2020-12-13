@@ -1,4 +1,12 @@
 {
+	"this.$emit()": {
+		"prefix": ["this.$emit()", "emit"],
+		"body": [
+			"this.\\$emit('${1:event-name}'${2:, ${3:param}});$0"
+		],
+		"description": "Trigger an event on the current instance. Any additional arguments will be passed into the listener’s callback function.\n `vm.$emit(eventName, […args])`"
+	},
+
 	"this.$watch()": {
 		"prefix": "this.$watch(data, cb)",
 		"body": [
@@ -33,5 +41,16 @@
 			"this.\\$delete(this.${1:object/array}, ${2:propertyName/index}, ${3:value});$0"
 		],
 		"description": "This is the alias of the global Vue.delete."
+	},
+
+	"this.$nextTick()": {
+		"prefix": ["this.$nextTick(cb)", "nextTick"],
+		"body": ["this.\\$nextTick(${1:function () {$0\\}});"],
+		"description": "Defer the callback to be executed after the next DOM update cycle. Use it immediately after you've changed some data to wait for the DOM update. This is the same as the global `nextTick`, except that the callback's this context is automatically bound to the instance calling `this` method.\nSince `$nextTick()` returns a promise, using the new ES2017 async/await syntax: `await this.$nextTick();`"
+	},
+	"this.$forceUpdate()": {
+		"prefix": "this.$forceUpdate()",
+		"body": ["this.\\$forceUpdate()$0;"],
+		"description": "Force the component instance to re-render. Note it does not affect all child components, only the instance itself and child components with inserted slot content."
 	}
 }

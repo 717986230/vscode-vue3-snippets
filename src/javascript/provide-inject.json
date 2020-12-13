@@ -1,4 +1,11 @@
 {
+	"app.provide()": {
+		"prefix": "app.provide()",
+		"body": [
+			"${3:app}.provide(${1:key[string/Symbol]}, ${2:value})"
+		],
+		"description": "Sets a value that can be injected into all components within the application. Components should use inject to receive the provided values."
+	},
 	"option.provide": {
 		"prefix": "option.provide",
 		"body": [

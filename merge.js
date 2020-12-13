@@ -14,10 +14,6 @@ const options = [
 		filename: 'vue',
 	},
 	{
-		path: 'src/html/*.json',
-		filename: 'html',
-	},
-	{
 		path: 'src/css/*.json',
 		filename: 'css',
 	},
@@ -29,20 +25,34 @@ function handler(error, files, filename) {
 
 		fs.existsSync(outputPath) || fs.mkdirSync(outputPath);
 
-		fs.accessSync(outputPath, fs.constants.R_OK | fs.constants.W_OK);
+		fs.accessSync(
+			outputPath,
+			fs.constants.R_OK | fs.constants.W_OK
+		);
 
 		files.forEach((file) => {
 			console.log('filename: %o', file);
-			const contents = JSON.parse(fs.readFileSync(file, 'utf8'));
+			const contents = JSON.parse(
+				fs.readFileSync(file, 'utf8')
+			);
 			Object.assign(output, contents);
 		});
 
-		fs.writeFileSync(`${outputPath}${filename}.json`, JSON.stringify(output, null, 4));
+		fs.writeFileSync(
+			`${outputPath}${filename}.json`,
+			JSON.stringify(output, null, 4)
+		);
 
 		console.log(`Complete! :)`);
 	} catch (err) {
 		console.log(err);
-		console.error(`${outputPath} ${err.code === 'ENOENT' ? 'does not exist' : 'is read-only'}`);
+		console.error(
+			`${outputPath} ${
+				err.code === 'ENOENT'
+					? 'does not exist'
+					: 'is read-only'
+			}`
+		);
 		console.log('Failed! :(');
 	}
 }

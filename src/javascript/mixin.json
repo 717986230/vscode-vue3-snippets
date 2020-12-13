@@ -1,10 +1,26 @@
 {
-	"Vue.mixin(mixin)": {
-		"prefix": "Vue.mixin()_UNSAFE",
-		"body": ["Vue.mixin({$1});"],
-		"description": "Vue 3.x BREAKING CHANGE.\nArguments: `{Object} mixin`\nApply a mixin globally, which affects every Vue instance created afterwards. This can be used by plugin authors to inject custom behavior into components. Not recommended in application code."
+	"Basics Mixin": {
+		"prefix": "vueMixin",
+		"body": [
+			"const ${1:feature}Mixin = {",
+			"  created() {",
+			"    $2",
+			"  },",
+			"  methods: {",
+			"    ${4:handler}() {",
+			"      $3",
+			"    },",
+			"  },",
+			"};"
+		],
+		"description": "Define a mixin object"
 	},
-	"option.mixins": {
+	"Global Mixin": {
+		"prefix": "app.mixin()",
+		"body": ["app.mixin({$1});"],
+		"description": "Apply a mixin in the whole application scope. Once registered they can be used in the template of any component within the current application. This can be used by plugin authors to inject custom behavior into components. Not recommended in application code."
+	},
+	"uses mixin, option.mixins": {
 		"prefix": "option.mixins",
 		"body": ["mixins: [${1:Mixin}],$0"],
 		"description": "Type: `Array<Object>`.\nThe `mixins` option accepts an array of mixin objects. These mixin objects can contain instance options like normal instance objects, and they will be merged against the eventual options using the same option merging logic in `Vue.extend()`. e.g. If your mixin contains a created hook and the component itself also has one, both functions will be called.\nMixin hooks are called in the order they are provided, and called before the component’s own hooks."
