@@ -16,15 +16,12 @@
 		"description": "Type: Array<string> | Object"
 	},
 
-	"option propsData": {
-		"prefix": "option.propsData",
-		"body": [
-			"propsData: {",
-			"  ${1:property}: ${2:'${3:value}'},$4",
-			"},$0"
-		],
-		"description": "Type: Object.\nonly respected in instance creation via `new`."
+	"option emits": {
+		"prefix": "option.emits",
+		"body": ["emits: ['${1:events}'],$0"],
+		"description": "Type: `Array<string> | Object`.\nA list/hash of custom events that can be emitted from the component. It has an Array-based simple syntax and an alternative Object-based syntax that allows to configure an event validation.\nIn Object-based syntax, the value of each property can either be `null` or a validator function. The validation function will receive the additional arguments passed to the `$emit` call. For example, if `this.$emit('foo', 1)` is called, the corresponding validator for `foo` will receive the argument `1`. The validator function should return a boolean to indicate whether the event arguments are valid."
 	},
+
 	"option computed": {
 		"prefix": "option.computed",
 		"body": [

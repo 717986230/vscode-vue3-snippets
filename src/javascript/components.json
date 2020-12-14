@@ -1,8 +1,4 @@
 {
-	"Import createApp": {
-		"prefix": ["importCreateApp", "ica"],
-		"body": ["import { createApp } from 'vue';"]
-	},
 	"Import Component": {
 		"prefix": ["importComponent", "ivc"],
 		"body": [
@@ -24,43 +20,6 @@
 			"});"
 		],
 		"description": "Register a global component. Registration also automatically sets the component's name with the given name parameter."
-	},
-
-	"Vue Global Async Components": {
-		"prefix": ["vueGlobalAsyncComponents", "vgac"],
-		"body": [
-			"const $1 = defineAsyncComponent(() => import('@/${2:views}/${1:FeaturePage.vue}'));",
-			"",
-			"app.component('${3:feature}', $1);"
-		],
-		"description": ""
-	},
-	"Vue Global Async Components with options": {
-		"prefix": ["vueGlobalAsyncComponents", "vgac"],
-		"body": [
-			"const ${1} = {",
-			"  loader: () => import('@/${2:views}/${1:FeaturePage.vue}'),",
-			"  delay: 200,",
-			"  timeout: 3000,",
-			"  suspensible: true,",
-			"  loadingComponent: LoadingComponent",
-			"  errorComponent: ErrorComponent,",
-			"  onError(error, retry, fail, attempts) {",
-			"    if(error.message.match(/fetch/) && attempts <= 3) { retry(); } else { fail(); }",
-			"  }",
-			"};"
-		],
-		"description": ""
-	},
-
-	"Vue Local Async Components": {
-		"prefix": ["vueLocalAsyncComponents", "vlac"],
-		"body": [
-			"${3:Feature}: defineAsyncComponent(() =>",
-			"  import('@/${2:views}/${1:FeaturePage.vue}')",
-			")"
-		],
-		"description": ""
 	},
 
 	"Retrieve Global Component": {

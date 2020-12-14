@@ -14,6 +14,10 @@ const options = [
 		filename: 'vue',
 	},
 	{
+		path: 'src/html/*.json',
+		filename: 'html',
+	},
+	{
 		path: 'src/css/*.json',
 		filename: 'css',
 	},

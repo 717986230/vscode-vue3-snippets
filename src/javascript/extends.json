@@ -1,0 +1,7 @@
+{
+	"option.extends": {
+		"prefix": "option.extends",
+		"body": ["extends: ${1:FeatureComponent},$0"],
+		"description": "Type: `Object | Function`.\nAllows declaratively extending another component (could be either a plain options object or a constructor). This is primarily intended to make it easier to extend between single file components."
+	}
+}

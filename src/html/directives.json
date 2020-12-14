@@ -1,0 +1,9 @@
+{
+	"v-is": {
+		"prefix": "v-is",
+		"body": [
+			"<${1:div} v-is=\"'${2:string-literal}'\"></${1}>"
+		],
+		"description": "Limited to: native HTML elements.\nthis section only affects cases where Vue templates are directly written in the page's HTML.\nWhen using in-DOM templates, the template is subject to native HTML parsing rules. Some HTML elements, such as `<ul>,` `<ol>,` `<table>` and `<select>` have restrictions on what elements can appear inside them, and some elements such as `<li>,` `<tr>,` and `<option>` can only appear inside certain other elements. As a workaround, we can use `v-is` directive on these elements."
+	}
+}

@@ -1,7 +1,0 @@
-{
-	"Vue.createApp": {
-		"prefix": "Vue.createApp",
-		"body": ["const app = Vue.createApp({})"],
-		"description": "description"
-	}
-}

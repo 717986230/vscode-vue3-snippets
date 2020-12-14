@@ -29,7 +29,7 @@
 		"description": "1. To also detect nested value changes inside Objects, you need to pass in `deep: true` in the options argument. Note that you don’t need to do so to listen for Array mutations. \n2. Passing in `immediate: true` in the option will trigger the callback immediately with the current value of the expression.\nVue 3.x Watch on Arrays need add the `deep` property."
 	},
 	"this.$set()": {
-		"prefix": ["this.$set()", "set"],
+		"prefix": "this.$set()",
 		"body": [
 			"this.\\$set(this.${1:object/array}, ${2:propertyName/index}, ${3:value});$0"
 		],
@@ -44,9 +44,9 @@
 	},
 
 	"this.$nextTick()": {
-		"prefix": ["this.$nextTick(cb)", "nextTick"],
+		"prefix": "this.$nextTick(cb)",
 		"body": ["this.\\$nextTick(${1:function () {$0\\}});"],
-		"description": "Defer the callback to be executed after the next DOM update cycle. Use it immediately after you've changed some data to wait for the DOM update. This is the same as the global `nextTick`, except that the callback's this context is automatically bound to the instance calling `this` method.\nSince `$nextTick()` returns a promise, using the new ES2017 async/await syntax: `await this.$nextTick();`"
+		"description": "Defer the callback to be executed after the next DOM update cycle. Use it immediately after you've changed some data to wait for the DOM update. This is the same as the global `nextTick`, except that the callback's `this` context is automatically bound to the instance calling this method."
 	},
 	"this.$forceUpdate()": {
 		"prefix": "this.$forceUpdate()",
