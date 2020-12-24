@@ -22,7 +22,7 @@
 
 [中文](./README_CN.md)
 
-You need to install "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)".
+🌈🌈🌈 First need to install "[Vue Basic Snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue-basic-snippets)", **they are one combined release.**
 
 Code snippets for Vue (v3.x) + Vue Router (v4.x) + VueX (v4.x).
 
