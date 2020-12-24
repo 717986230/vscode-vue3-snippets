@@ -1,4 +1,24 @@
-# Vue 3 Snippet (Visual Studio Code)
+<p>
+  <h1 align="center">Vue 3 Snippet (Visual Studio Code)</h1>
+</p>
+
+<p align="center">
+  <a href="https://github.com/xianghongai/vscode-vue3-snippets">
+    <img src="https://img.shields.io/github/repo-size/xianghongai/vscode-vue3-snippets?style=plastic&color=4ac51c">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue3-snippets">
+    <img src="https://vsmarketplacebadge.apphb.com/version-short/NicholasHsiang.vscode-vue3-snippets.svg?style=plastic&color=f07b3c">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue3-snippets">
+    <img src="https://vsmarketplacebadge.apphb.com/installs-short/NicholasHsiang.vscode-vue3-snippets.svg?style=plastic&color=4ac51c">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue3-snippets">
+    <img src="https://vsmarketplacebadge.apphb.com/rating-short/NicholasHsiang.vscode-vue3-snippets.svg?style=plastic&color=4ac51c">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-vue3-snippets">
+    <img src="https://img.shields.io/github/license/xianghongai/vscode-vue3-snippets?maxAge=2592000&style=plastic&color=4ac51c">
+  </a>
+</p>
 
 [中文](./README_CN.md)
 
