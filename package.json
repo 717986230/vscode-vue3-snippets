@@ -31,27 +31,23 @@
 		"Vuex",
 		"Vue 3",
 		"Vue3",
+		"Vue Snippet",
+		"Vue Snippets",
+		"Vue 3 Snippet",
 		"Vue 3 Snippets",
+		"Vue3 Snippet",
 		"Vue3 Snippets",
 		"Vue 3 Code Snippets",
 		"Vue3 Code Snippets"
 	],
 	"contributes": {
-		"languages": [
-			{
-				"id": "vue",
-				"aliases": [
-					"Vue",
-					"vue"
-				],
-				"extensions": [
-					".vue"
-				]
-			}
-		],
 		"snippets": [
 			{
 				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "javascriptreact",
 				"path": "./snippets/javascript.json"
 			},
 			{

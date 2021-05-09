@@ -27,6 +27,7 @@ Vue 3 和 3 变化比较大，2 推荐 Optional 范式，3 推荐 Composition Fu
 ## Supported languages (file extensions)
 
 - JavaScript (`.js`)
+- JSX (`.jsx`)
 - TypeScript (`.ts`)
 - Vue (`.vue`)
 

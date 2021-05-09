@@ -47,6 +47,7 @@ It is best to separate the Code Snippets of Vue 2 and 3 respectively. According 
 ## Supported languages (file extensions)
 
 - JavaScript (`.js`)
+- JSX (`.jsx`)
 - TypeScript (`.ts`)
 - Vue (`.vue`)
 
