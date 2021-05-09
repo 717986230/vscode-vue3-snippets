@@ -4,7 +4,7 @@
 	"displayName": "Vue 3 Snippets",
 	"description": "Code snippets for Vue 3",
 	"icon": "art/icon.png",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"galleryBanner": {
 		"color": "#ffffff",
 		"theme": "dark"
@@ -41,24 +41,6 @@
 		"Vue3 Code Snippets"
 	],
 	"contributes": {
-		"languages": [
-			{
-				"id": "vue",
-				"aliases": [
-					"Vue",
-					"vue"
-				],
-				"extensions": [
-					".vue"
-				]
-			},
-			{
-				"id": "vue-html",
-				"extensions": [
-					".vue"
-				]
-			}
-		],
 		"snippets": [
 			{
 				"language": "javascript",
