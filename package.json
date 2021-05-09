@@ -41,6 +41,24 @@
 		"Vue3 Code Snippets"
 	],
 	"contributes": {
+		"languages": [
+			{
+				"id": "vue",
+				"aliases": [
+					"Vue",
+					"vue"
+				],
+				"extensions": [
+					".vue"
+				]
+			},
+			{
+				"id": "vue-html",
+				"extensions": [
+					".vue"
+				]
+			}
+		],
 		"snippets": [
 			{
 				"language": "javascript",
