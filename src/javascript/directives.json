@@ -19,7 +19,7 @@
 			"  ${14:unmounted(el, binding, vnode, prevVNode) {$15\\},}",
 			"});$0"
 		],
-		"description": "Register a global directive (all lifecycle hooks)"
+		"description": "Register a global directive (all lifecycle hooks)\n"
 	},
 	"Vue Global Directive (bind, update)": {
 		"prefix": ["app.directive()", "vgd"],
@@ -29,14 +29,14 @@
 			"  $0",
 			"});"
 		],
-		"description": "Register a global directive (bind, update)"
+		"description": "Register a global directive (bind, update)\n"
 	},
 	"Retrieve Global Directive": {
 		"prefix": "app.directive()",
 		"body": [
 			"const ${2:feature}Directive = ${6:app}.directive('${1:id}');"
 		],
-		"description": "getter, return the directive definition if registered"
+		"description": "getter, return the directive definition if registered\n"
 	},
 
 	"Vue Single File Directive (All Hooks)": {
@@ -53,13 +53,13 @@
 			"  ${14:unmounted(el, binding, vnode, prevVNode) {$15\\},}",
 			"});$0"
 		],
-		"description": "Register a single file directive (all lifecycle hooks)"
+		"description": "Register a single file directive (all lifecycle hooks)\n"
 	},
 
 	"Vue Local Directives": {
 		"prefix": ["option.directives", "vld"],
 		"body": ["directives: {", "  ${1:id}: {$2},$0", "},"],
-		"description": "Define local directives in a component’s options.\nA hash of directives to be made available to the Vue instance."
+		"description": "Define local directives in a component’s options.\nA hash of directives to be made available to the Vue instance.\n"
 	},
 
 	"Directive created hook": {
@@ -69,7 +69,7 @@
 			"  $5",
 			"},$0"
 		],
-		"description": "Directive `bind` lifecycle"
+		"description": "Directive `bind` lifecycle\n"
 	},
 	"Directive beforeMount hook": {
 		"prefix": ["directive.beforeMount", "vd.beforeMount"],
@@ -78,7 +78,7 @@
 			"  $5",
 			"},$0"
 		],
-		"description": "Directive `inserted` lifecycle"
+		"description": "Directive `inserted` lifecycle\n"
 	},
 	"Directive mounted hook": {
 		"prefix": ["directive.mounted", "vd.mounted"],
@@ -87,7 +87,7 @@
 			"  $5",
 			"},$0"
 		],
-		"description": "Directive `update` lifecycle"
+		"description": "Directive `update` lifecycle\n"
 	},
 	"Directive beforeUpdate hook": {
 		"prefix": ["directive.beforeUpdate", "vd.beforeUpdate"],
@@ -96,7 +96,7 @@
 			"  $5",
 			"},$0"
 		],
-		"description": "Directive `componentUpdated` lifecycle"
+		"description": "Directive `componentUpdated` lifecycle\n"
 	},
 	"Directive updated hook": {
 		"prefix": ["directive.updated", "vd.updated"],
@@ -105,7 +105,7 @@
 			"  $5",
 			"},$0"
 		],
-		"description": "Directive `unbind` lifecycle"
+		"description": "Directive `unbind` lifecycle\n"
 	},
 	"Directive beforeUnmount hook": {
 		"prefix": [
@@ -117,7 +117,7 @@
 			"  $5",
 			"},$0"
 		],
-		"description": "Directive `unbind` lifecycle"
+		"description": "Directive `unbind` lifecycle\n"
 	},
 	"Directive unmounted hook": {
 		"prefix": ["directive.unmounted", "vd.unmounted"],
@@ -126,6 +126,6 @@
 			"  $5",
 			"},$0"
 		],
-		"description": "Directive `unbind` lifecycle"
+		"description": "Directive `unbind` lifecycle\n"
 	}
 }

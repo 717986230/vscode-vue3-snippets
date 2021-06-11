@@ -4,7 +4,7 @@
 	"displayName": "Vue 3 Snippets",
 	"description": "Code snippets for Vue 3",
 	"icon": "art/icon.png",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"galleryBanner": {
 		"color": "#ffffff",
 		"theme": "dark"
@@ -27,6 +27,10 @@
 	"categories": [
 		"Snippets"
 	],
+	"scripts": {
+		"build": "node merge.js && vsce package",
+		"release": "node merge.js && vsce package && vsce publish"
+	},
 	"keywords": [
 		"Snippet",
 		"Vue",
@@ -71,14 +75,6 @@
 			},
 			{
 				"language": "vue",
-				"path": "./snippets/javascript.json"
-			},
-			{
-				"language": "vue",
-				"path": "./snippets/html.json"
-			},
-			{
-				"language": "vue",
 				"path": "./snippets/vue.json"
 			},
 			{
@@ -94,9 +90,6 @@
 				"path": "./snippets/css.json"
 			}
 		]
-	},
-	"scripts": {
-		"build": "node merge.js && vsce package"
 	},
 	"devDependencies": {
 		"glob": "^7.1.4"

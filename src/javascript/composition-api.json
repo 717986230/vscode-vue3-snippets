@@ -2,32 +2,32 @@
 	"onBeforeMount": {
 		"prefix": "onBeforeMount",
 		"body": ["onBeforeMount(() => {", "  $1", "});$0"],
-		"description": "Composition API."
+		"description": "Composition API.\n"
 	},
 	"onMounted": {
 		"prefix": "onMounted",
 		"body": ["onMounted(() => {", "  $1", "});$0"],
-		"description": "Composition API."
+		"description": "Composition API.\n"
 	},
 	"onBeforeUpdate": {
 		"prefix": "onBeforeUpdate",
 		"body": ["onBeforeUpdate(() => {", "  $1", "});$0"],
-		"description": "Composition API."
+		"description": "Composition API.\n"
 	},
 	"onUpdated": {
 		"prefix": "onUpdated",
 		"body": ["onUpdated(() => {", "  $1", "});$0"],
-		"description": "Composition API."
+		"description": "Composition API.\n"
 	},
 	"onBeforeUnmount": {
 		"prefix": "onBeforeUnmount",
 		"body": ["onBeforeUnmount(() => {", "  $1", "});$0"],
-		"description": "Composition API."
+		"description": "Composition API.\n"
 	},
 	"onUnmounted": {
 		"prefix": "onUnmounted",
 		"body": ["onUnmounted(() => {", "  $1", "});$0"],
-		"description": "Composition API."
+		"description": "Composition API.\n"
 	},
 	"onErrorCaptured": {
 		"prefix": "onErrorCaptured",
@@ -36,7 +36,7 @@
 			"  $1",
 			"});$0"
 		],
-		"description": "Composition API."
+		"description": "Composition API.\n"
 	},
 	"onRenderTracked": {
 		"prefix": "onRenderTracked",
@@ -45,7 +45,7 @@
 			"  $1",
 			"});$0"
 		],
-		"description": "Composition API."
+		"description": "Composition API.\n"
 	},
 	"onRenderTriggered": {
 		"prefix": "onRenderTriggered",
@@ -54,37 +54,37 @@
 			"  $1",
 			"});$0"
 		],
-		"description": "Composition API."
+		"description": "Composition API.\n"
 	},
 	"provide": {
 		"prefix": "provide",
 		"body": ["provide('${1:name}', ${2:'value'});"],
-		"description": "Composition API."
+		"description": "Composition API.\n"
 	},
 	"using readonly on provided property": {
 		"prefix": "provideReadonly",
 		"body": [
 			"provide('${1:name}', readonly(${2:immutableData}));"
 		],
-		"description": "Composition API.\n`provide` and `inject` enables dependency injection. Both can only be called during `setup()` with a current active instance."
+		"description": "Composition API.\n`provide` and `inject` enables dependency injection. Both can only be called during `setup()` with a current active instance.\n"
 	},
 	"inject": {
 		"prefix": "inject",
 		"body": [
 			"const user${1:Provide} = inject('${2:name}'${3:, ${4:default}});"
 		],
-		"description": "Composition API.\n`provide` and `inject` enables dependency injection. Both can only be called during `setup()` with a current active instance."
+		"description": "Composition API.\n`provide` and `inject` enables dependency injection. Both can only be called during `setup()` with a current active instance.\n"
 	},
 	"InjectionKey": {
 		"prefix": "InjectionKey",
 		"body": ["const key: InjectionKey = Symbol();"],
-		"description": "Composition API.\n`InjectionKey` interface which is a generic type that extends Symbol. It can be used to sync the type of the injected value between the provider and the consumer."
+		"description": "Composition API.\n`InjectionKey` interface which is a generic type that extends Symbol. It can be used to sync the type of the injected value between the provider and the consumer.\n"
 	},
 	"getCurrentInstance": {
 		"prefix": "getCurrentInstance",
 		"body": [
 			"const internalInstance = getCurrentInstance();"
 		],
-		"description": "Composition API.\n`getCurrentInstance` enables access to an internal component instance useful for advanced usages or for library creators."
+		"description": "Composition API.\n`getCurrentInstance` enables access to an internal component instance useful for advanced usages or for library creators.\n"
 	}
 }

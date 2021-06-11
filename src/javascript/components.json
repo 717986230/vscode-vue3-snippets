@@ -19,15 +19,14 @@
 			"  template: '$5',",
 			"});"
 		],
-		"description": "Register a global component. Registration also automatically sets the component's name with the given name parameter."
+		"description": "Register a global component. Registration also automatically sets the component's name with the given name parameter.\n"
 	},
 
 	"Retrieve Global Component": {
 		"prefix": "app.component()",
 		"body": [
 			"const ${2:Feature} = ${3:app}.component('${1:FeatureComponent}');"
-		],
-		"description": ""
+		]
 	},
 
 	"Option Components": {

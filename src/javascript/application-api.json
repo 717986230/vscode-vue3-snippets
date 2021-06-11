@@ -2,11 +2,11 @@
 	"app.mount()": {
 		"prefix": "app.mount()",
 		"body": ["${2:app}.mount('${1:Element/#Selector}');"],
-		"description": "Mounts a root component of the application instance on the provided DOM element."
+		"description": "Mounts a root component of the application instance on the provided DOM element.\n"
 	},
 	"app.unmount()": {
 		"prefix": "app.unmount()",
 		"body": ["${2:app}.unmount('${1:Element/#Selector}');"],
-		"description": "Unmounts a root component of the application instance on the provided DOM element."
+		"description": "Unmounts a root component of the application instance on the provided DOM element.\n"
 	}
 }

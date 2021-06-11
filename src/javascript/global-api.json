@@ -2,12 +2,12 @@
 	"nextTick([callback, context])": {
 		"prefix": "nextTick()",
 		"body": ["nextTick(() => {", "  $0", "});"],
-		"description": "Defer the callback to be executed after the next DOM update cycle. Use it immediately after you’ve changed some data to wait for the DOM update."
+		"description": "Defer the callback to be executed after the next DOM update cycle. Use it immediately after you’ve changed some data to wait for the DOM update.\n"
 	},
 	"await nextTick()": {
 		"prefix": "nextTick()",
 		"body": ["await nextTick();"],
-		"description": "Defer the callback to be executed after the next DOM update cycle. Use it immediately after you’ve changed some data to wait for the DOM update."
+		"description": "Defer the callback to be executed after the next DOM update cycle. Use it immediately after you’ve changed some data to wait for the DOM update.\n"
 	},
 
 	"Vue.set(target, propertyName/index, value)": {
@@ -15,27 +15,27 @@
 		"body": [
 			"Vue.set(${1:vm.${2:object/array}}, ${3:propertyName/index}, ${4:value});$0"
 		],
-		"description": "Adds a property to a reactive object, ensuring the new property is also reactive, so triggers view updates. This must be used to add new properties to reactive objects, as Vue cannot detect normal property additions (e.g. this.`myObject.newProperty = 'hi'`).\nReturns: the set value."
+		"description": "Adds a property to a reactive object, ensuring the new property is also reactive, so triggers view updates. This must be used to add new properties to reactive objects, as Vue cannot detect normal property additions (e.g. this.`myObject.newProperty = 'hi'`).\nReturns: the set value.\n"
 	},
 	"Vue.delete(target, propertyName/index)": {
 		"prefix": "Vue.delete()_UNSAFE",
 		"body": [
 			"Vue.delete(${1:vm.${2:object/array}}, ${3:propertyName/index}, ${4:value});$0"
 		],
-		"description": "Delete a property on an object. If the object is reactive, ensure the deletion triggers view updates. This is primarily used to get around the limitation that Vue cannot detect property deletions, but you should rarely need to use it."
+		"description": "Delete a property on an object. If the object is reactive, ensure the deletion triggers view updates. This is primarily used to get around the limitation that Vue cannot detect property deletions, but you should rarely need to use it.\n"
 	},
 
 	"createApp": {
 		"prefix": "createApp",
 		"body": ["const ${1:app} = createApp({", "  $0", "});"],
-		"description": "Global API."
+		"description": "Global API.\n"
 	},
 	"h": {
 		"prefix": "h",
 		"body": [
 			"h(${1:type:String|Object|Function}, ${2:props:Object}, ${3:children:String|Array|Object});"
 		],
-		"description": "Global API."
+		"description": "Global API.\n"
 	},
 	"defineComponent": {
 		"prefix": "defineComponent",
@@ -44,7 +44,7 @@
 			"  $0",
 			"});"
 		],
-		"description": "Global API."
+		"description": "Global API.\n"
 	},
 
 	"Vue Global Async Components": {
@@ -54,7 +54,7 @@
 			"",
 			"app.component('${3:feature}', $1);"
 		],
-		"description": ""
+		"description": "\n"
 	},
 	"Vue Global Async Components with options": {
 		"prefix": ["vueGlobalAsyncComponents", "vgac"],
@@ -71,7 +71,7 @@
 			"  }",
 			"};"
 		],
-		"description": ""
+		"description": "\n"
 	},
 
 	"Vue Local Async Components": {
@@ -81,7 +81,7 @@
 			"  import('@/${2:views}/${1:FeaturePage.vue}')",
 			")"
 		],
-		"description": ""
+		"description": "\n"
 	},
 
 	"resolveComponent": {
@@ -89,28 +89,28 @@
 		"body": [
 			"const ${1:FeatureComponent} = resolveComponent('${1}');"
 		],
-		"description": "Global API."
+		"description": "Global API.\n"
 	},
 	"resolveDynamicComponent": {
 		"prefix": "resolveDynamicComponent",
 		"body": [
 			"const ${1:FeatureComponent} = resolveDynamicComponent('${1}');"
 		],
-		"description": "Global API."
+		"description": "Global API.\n"
 	},
 	"resolveDirective": {
 		"prefix": "resolveDirective",
 		"body": [
 			"const ${1:FeatureDirective} = resolveDirective('${1}');"
 		],
-		"description": "Global API."
+		"description": "Global API.\n"
 	},
 	"withDirectives": {
 		"prefix": "withDirectives",
 		"body": [
 			"const ${1:FeatureDirective} = resolveDirective('${1}');"
 		],
-		"description": "Global API."
+		"description": "Global API.\n"
 	},
 	"createRenderer": {
 		"prefix": "createRenderer",
@@ -124,6 +124,6 @@
 			"",
 			"export { render, createApp };"
 		],
-		"description": "Global API."
+		"description": "Global API.\n"
 	}
 }

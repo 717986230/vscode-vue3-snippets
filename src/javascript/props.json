@@ -1,307 +1,307 @@
 {
 	"Prop Options": {
-		"prefix": "propOptions",
+		"prefix": ["propOptions", "poptions"],
 		"body": [
 			"${1:property}: {",
-			"  type: ${2:String|Number|Boolean|Array|Objec|Date|Function|Symbol|Promise},",
-			"  required: ${3:boolean},",
-			"  default() {",
-			"    return ${4:any};",
-			"  },",
-			"  validator(value) {",
-			"    return ${5:boolean };",
-			"  },",
+			"\ttype: ${2:String|Number|Boolean|Array|Objec|Date|Function|Symbol|Promise},",
+			"\trequired: ${3:boolean},",
+			"\tdefault() {",
+			"\t\treturn ${4:any};",
+			"\t},",
+			"\tvalidator(value) {",
+			"\t\treturn ${5:boolean };",
+			"\t},",
 			"},$0"
 		]
 	},
 	"String": {
-		"prefix": "propString",
+		"prefix": ["propString", "ps"],
 		"body": ["${1:property}: String,$0"]
 	},
 	"Number": {
-		"prefix": "propNumber",
+		"prefix": ["propNumber", "pn"],
 		"body": ["${1:property}: Number,$0"]
 	},
 	"Boolean": {
-		"prefix": "propBoolean",
+		"prefix": ["propBoolean", "pb"],
 		"body": ["${1:property}: Boolean,$0"]
 	},
 	"Array": {
-		"prefix": "propArray",
+		"prefix": ["propArray", "pa"],
 		"body": ["${1:property}: Array,$0"]
 	},
 	"Object": {
-		"prefix": "propObject",
+		"prefix": ["propObject", "po"],
 		"body": ["${1:property}: Object,$0"]
 	},
 	"Date": {
-		"prefix": "propDate",
+		"prefix": ["propDate", "pd"],
 		"body": ["${1:property}: Date,$0"]
 	},
 	"Function": {
-		"prefix": "propFunction",
+		"prefix": ["propFunction", "pf"],
 		"body": ["${1:property}: Function,$0"]
 	},
 	"Symbol": {
-		"prefix": "propSymbol",
+		"prefix": ["propSymbol", "psy"],
 		"body": ["${1:property}: Symbol,$0"]
 	},
 	"Promise": {
-		"prefix": "propPromise",
+		"prefix": ["propPromise", "pp"],
 		"body": ["${1:property}: Promise,$0"]
 	},
 
 	"String (default)": {
-		"prefix": "propStringDefault",
+		"prefix": ["propStringDefault", "psd"],
 		"body": [
 			"${1:property}: {",
-			"  type: String,",
-			"  default: '${2}',",
+			"\ttype: String,",
+			"\tdefault: '${2}',",
 			"},$0"
 		]
 	},
 	"Number (default)": {
-		"prefix": "propNumberDefault",
+		"prefix": ["propNumberDefault", "pnd"],
 		"body": [
 			"${1:property}: {",
-			"  type: Number,",
-			"  default: ${2},",
+			"\ttype: Number,",
+			"\tdefault: ${2},",
 			"},$0"
 		]
 	},
 	"Boolean (default)": {
-		"prefix": "propBooleanDefault",
+		"prefix": ["propBooleanDefault", "pbd"],
 		"body": [
 			"${1:property}: {",
-			"  type: Boolean,",
-			"  default: ${2:true},",
+			"\ttype: Boolean,",
+			"\tdefault: ${2:true},",
 			"},$0"
 		]
 	},
 	"Array (default)": {
-		"prefix": "propArrayDefault",
+		"prefix": ["propArrayDefault", "pad"],
 		"body": [
 			"${1:property}: {",
-			"  type: Array,",
-			"  default: [${2}],",
+			"\ttype: Array,",
+			"\tdefault: [${2}],",
 			"},$0"
 		]
 	},
 	"Object (default)": {
-		"prefix": "propObjectDefault",
+		"prefix": ["propObjectDefault", "pod"],
 		"body": [
 			"${1:property}: {",
-			"  type: Object,",
-			"  default: {${2}},",
+			"\ttype: Object,",
+			"\tdefault: {${2}},",
 			"},$0"
 		]
 	},
 	"Date (default)": {
-		"prefix": "propDateDefault",
+		"prefix": ["propDateDefault", "pdd"],
 		"body": [
 			"${1:property}: {",
-			"  type: Date,",
-			"  default: ${2},",
+			"\ttype: Date,",
+			"\tdefault: ${2},",
 			"},$0"
 		]
 	},
 	"Symbol (default)": {
-		"prefix": "propSymbolDefault",
+		"prefix": ["propSymbolDefault", "psyd"],
 		"body": [
 			"${1:property}: {",
-			"  type: Symbol,",
-			"  default: ${2:Symbol($3)},",
+			"\ttype: Symbol,",
+			"\tdefault: ${2:Symbol($3)},",
 			"},$0"
 		]
 	},
 	"Function (default)": {
-		"prefix": "propFunctionDefault",
+		"prefix": ["propFunctionDefault", "pfd"],
 		"body": [
 			"${1:property}: {",
-			"  type: Function,",
-			"  default: ${2},",
+			"\ttype: Function,",
+			"\tdefault: ${2},",
 			"},$0"
 		]
 	},
 	"Promise (default)": {
-		"prefix": "propPromiseDefault",
+		"prefix": ["propPromiseDefault", "ppd"],
 		"body": [
 			"${1:property}: {",
-			"  type: Promise,",
-			"  default: ${2},",
+			"\ttype: Promise,",
+			"\tdefault: ${2},",
 			"},$0"
 		]
 	},
 
 	"String (required)": {
-		"prefix": "propStringRequired",
+		"prefix": ["propStringRequired", "psr"],
 		"body": [
 			"${1:property}: {",
-			"  type: String,",
-			"  required: ${2:true},",
+			"\ttype: String,",
+			"\trequired: ${2:true},",
 			"},$0"
 		]
 	},
 	"Number (required)": {
-		"prefix": "propNumberRequired",
+		"prefix": ["propNumberRequired", "pnr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Number,",
-			"  required: ${2:true},",
+			"\ttype: Number,",
+			"\trequired: ${2:true},",
 			"},$0"
 		]
 	},
 	"Boolean (required)": {
-		"prefix": "propBooleanRequired",
+		"prefix": ["propBooleanRequired", "pbr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Boolean,",
-			"  required: ${2:true},",
+			"\ttype: Boolean,",
+			"\trequired: ${2:true},",
 			"},$0"
 		]
 	},
 	"Array (required)": {
-		"prefix": "propArrayRequired",
+		"prefix": ["propArrayRequired", "par"],
 		"body": [
 			"${1:property}: {",
-			"  type: Array,",
-			"  required: ${2:true},",
+			"\ttype: Array,",
+			"\trequired: ${2:true},",
 			"},$0"
 		]
 	},
 	"Object (required)": {
-		"prefix": "propObjectRequired",
+		"prefix": ["propObjectRequired", "por"],
 		"body": [
 			"${1:property}: {",
-			"  type: Object,",
-			"  required: ${2:true},",
+			"\ttype: Object,",
+			"\trequired: ${2:true},",
 			"},$0"
 		]
 	},
 	"Date (required)": {
-		"prefix": "propDateRequired",
+		"prefix": ["propDateRequired", "pdr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Date,",
-			"  required: ${2:true},",
+			"\ttype: Date,",
+			"\trequired: ${2:true},",
 			"},$0"
 		]
 	},
 	"Function (required)": {
-		"prefix": "propFunctionRequired",
+		"prefix": ["propFunctionRequired", "pfr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Function,",
-			"  required: ${2:true},",
+			"\ttype: Function,",
+			"\trequired: ${2:true},",
 			"},$0"
 		]
 	},
 	"Symbol (required)": {
-		"prefix": "propSymbolRequired",
+		"prefix": ["propSymbolRequired", "psyr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Symbol,",
-			"  required: ${2:true},",
+			"\ttype: Symbol,",
+			"\trequired: ${2:true},",
 			"},$0"
 		]
 	},
 	"Promise (required)": {
-		"prefix": "propPromiseRequired",
+		"prefix": ["propPromiseRequired", "ppr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Promise,",
-			"  required: ${2:true},",
+			"\ttype: Promise,",
+			"\trequired: ${2:true},",
 			"},$0"
 		]
 	},
 
 	"String (default, required)": {
-		"prefix": "propStringDefaultRequired",
+		"prefix": ["propStringDefaultRequired", "psdr"],
 		"body": [
 			"${1:property}: {",
-			"  type: String,",
-			"  default: '${2}',",
-			"  required: ${3:true},",
+			"\ttype: String,",
+			"\tdefault: '${2}',",
+			"\trequired: ${3:true},",
 			"},$0"
 		]
 	},
 	"Number (default, required)": {
-		"prefix": "propNumberDefaultRequired",
+		"prefix": ["propNumberDefaultRequired", "pndr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Number,",
-			"  default: ${2},",
-			"  required: ${3:true},",
+			"\ttype: Number,",
+			"\tdefault: ${2},",
+			"\trequired: ${3:true},",
 			"},$0"
 		]
 	},
 	"Boolean (default, required)": {
-		"prefix": "propBooleanDefaultRequired",
+		"prefix": ["propBooleanDefaultRequired", "pbdr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Boolean,",
-			"  default: ${2:true},",
-			"  required: ${3:true},",
+			"\ttype: Boolean,",
+			"\tdefault: ${2:true},",
+			"\trequired: ${3:true},",
 			"},$0"
 		]
 	},
 	"Array (default, required)": {
-		"prefix": "propArrayDefaultRequired",
+		"prefix": ["propArrayDefaultRequired", "padr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Array,",
-			"  default: [${2}],",
-			"  required: ${3:true},",
+			"\ttype: Array,",
+			"\tdefault: [${2}],",
+			"\trequired: ${3:true},",
 			"},$0"
 		]
 	},
 	"Object (default, required)": {
-		"prefix": "propObjectDefaultRequired",
+		"prefix": ["propObjectDefaultRequired", "podr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Object,",
-			"  default: {${2}},",
-			"  required: ${3:true},",
+			"\ttype: Object,",
+			"\tdefault: {${2}},",
+			"\trequired: ${3:true},",
 			"},$0"
 		]
 	},
 	"Date (default, required)": {
-		"prefix": "propDateDefaultRequired",
+		"prefix": ["propDateDefaultRequired", "pddr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Date,",
-			"  default: ${2},",
-			"  required: ${3:true},",
+			"\ttype: Date,",
+			"\tdefault: ${2},",
+			"\trequired: ${3:true},",
 			"},$0"
 		]
 	},
 	"Function (default, required)": {
-		"prefix": "propFunctionDefaultRequired",
+		"prefix": ["propFunctionDefaultRequired", "pfdr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Function,",
-			"  default: ${2},",
-			"  required: ${3:true},",
+			"\ttype: Function,",
+			"\tdefault: ${2},",
+			"\trequired: ${3:true},",
 			"},$0"
 		]
 	},
 	"Symbol (default, required)": {
-		"prefix": "propSymbolDefaultRequired",
+		"prefix": ["propSymbolDefaultRequired", "psydr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Symbol,",
-			"  default: ${2:Symbol($3)},",
-			"  required: ${4:true},",
+			"\ttype: Symbol,",
+			"\tdefault: ${2:Symbol($3)},",
+			"\trequired: ${4:true},",
 			"},$0"
 		]
 	},
 	"Promise (default, required)": {
-		"prefix": "propPromiseDefaultRequired",
+		"prefix": ["propPromiseDefaultRequired", "ppdr"],
 		"body": [
 			"${1:property}: {",
-			"  type: Promise,",
-			"  default: ${2},",
-			"  required: ${4:true},",
+			"\ttype: Promise,",
+			"\tdefault: ${2},",
+			"\trequired: ${4:true},",
 			"},$0"
 		]
 	}
