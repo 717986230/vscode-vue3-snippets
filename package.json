@@ -21,6 +21,9 @@
 	"engines": {
 		"vscode": "^0.12.x"
 	},
+	"extensionDependencies": [
+		"octref.vetur"
+	],
 	"categories": [
 		"Snippets"
 	],
